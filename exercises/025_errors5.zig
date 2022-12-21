@@ -1,4 +1,3 @@
-//
 // Zig has a handy "try" shortcut for this common error handling pattern:
 //
 //     canFail() catch |err| return err;
@@ -26,7 +25,7 @@ fn addFive(n: u32) MyNumberError!u32 {
     // This function needs to return any error which might come back from detect().
     // Please use a "try" statement rather than a "catch".
     //
-    var x = detect(n);
+    var x = try detect(n);
 
     return x + 5;
 }
