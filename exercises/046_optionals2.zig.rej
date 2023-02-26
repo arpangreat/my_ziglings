@@ -1,0 +1,7 @@
+*** /dev/null
+--- /dev/null
+***************
+*** 54
+-         if (e.tail == null) ???;
+--- 42 -----
++         if (e.tail == null) break;
